@@ -1,0 +1,158 @@
+
+#header {
+    overflow: hidden;
+}
+.navbar {
+    padding: -1px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    
+}
+.navbar a {
+    text-decoration: none;
+}
+h2.logo {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+h2.logo strong {
+    font-size: 35px;
+    color: #28f8f8;
+    font-weight: 600;
+}
+h2.center-logo {
+    margin: 0 25px;
+}
+#navbarSupportedContent {
+    justify-content: center;
+}
+ul.navbar-nav {}
+ul.navbar-nav li.nav-item {
+    margin-right: 2px;
+}
+ul.navbar-nav li.nav-item:last-child {
+    margin-right: 0;
+}
+ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #28f8f8;
+}
+ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: #28f8f8;
+}
+
+
+
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+
+.dpdown{
+    background:transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    margin-top: 5px;
+    align-items: center;
+    font-family: inherit;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    letter-spacing: 0.05em;
+}
+.dpdown:hover{
+    background:transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    margin-top: 5px;
+    align-items: center;
+    font-family: inherit;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    letter-spacing: 0.05em;
+}
+
+.walletbtn{
+    background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #FFC700;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    align-items: center;
+    width: 100%;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    letter-spacing: 0.05em;
+}
+.walletbtn:hover{
+    background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #FFC700;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    align-items: center;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    letter-spacing: 0.05em;
+}
+.gameplay{
+    
+  background-image:
+  linear-gradient(to bottom ,rgba(2, 13, 40, 0) 0%, #020D28),
+  linear-gradient(to top ,rgba(2, 13, 40, 0) 0%, #020D28),
+  url('https://img.freepik.com/free-photo/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_1258-103545.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+  width: 100%;
+}
