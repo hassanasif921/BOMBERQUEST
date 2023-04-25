@@ -3,10 +3,12 @@
     overflow: hidden;
 }
 .navbar {
+    position: initial;
     padding: -1px 0;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 80px;
 }
 .navbar-brand {
     
@@ -21,7 +23,8 @@ h2.logo {
 }
 h2.logo strong {
     font-size: 35px;
-    color: #28f8f8;
+    color: #FFC700
+;
     font-weight: 600;
 }
 h2.center-logo {
@@ -41,10 +44,12 @@ ul.navbar-nav li.nav-item a.nav-link {
     color: #fff;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: #28f8f8;
+    color: #FFC700
+;
 }
 ul.navbar-nav li.nav-item a.nav-link:hover {
-    color: #28f8f8;
+    color: #FFC700
+;
 }
 
 
@@ -123,14 +128,14 @@ button {
     margin-top: 5px;
     align-items: center;
     width: 100%;
-    font-family: inherit;
+    font-family: sans-serif;
     font-weight: bolder;
     font-size: 17px;
     padding: 8px 30px 8px 30px;
     letter-spacing: 0.05em;
 }
 .walletbtn:hover{
-    background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
+    background: linear-gradient(180deg, #FFC700 -189.77%, #FE9A14 100%);
     border: 1px solid;
     border-radius: 10px;
     border-color: #FFC700;
@@ -144,6 +149,7 @@ button {
     padding: 8px 30px 8px 30px;
     letter-spacing: 0.05em;
 }
+
 .gameplay{
     
   background-image:
@@ -155,4 +161,30 @@ button {
   background-size: cover;
   height: fit-content;
   width: 100%;
+}
+.dropdownbtn{
+    inset: auto auto 750px auto;
+    transform: translate(0px, 51px);
+    width: 100%;
+background: #020D28;
+border: 1px solid #FFFFFF;
+border-radius: 12px;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 700;
+    font-family: myFirstFont;
+    color: #ffffff;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #FFC700;
+    text-decoration: none;
+    background-color: #f8f9fa00;
 }

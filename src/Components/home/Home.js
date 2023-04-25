@@ -97,7 +97,7 @@ const Home = () => {
 
   return (
    <>
-   <Container fluid style={{paddingTop:'100px',paddingBottom:'100px'}} className="bgtwo bggr">
+   <Container fluid style={{paddingTop:'0px',paddingBottom:'70px'}} className="bgtwo bggr">
 <Row>
   <Col  xs={12} md={2}></Col>
   <Col xs={12} md={8}>
@@ -113,7 +113,7 @@ const Home = () => {
       className="video-thumb js-trigger-modal"
     >
       <div className="ameer">
-        <i className="fa fa-play" aria-hidden="true" />
+        <i className="fas fa-play ico4" aria-hidden="true" />
         <span />
         <span />
         <span />
@@ -169,7 +169,7 @@ const Home = () => {
 </Row>
    </Container>
 
-<Container fluid className='playearn' style={{paddingTop:'150px',paddingBottom:'150px'}}>
+<Container fluid className='playearn' style={{paddingTop:'70px',paddingBottom:'150px'}}>
 <Container fluid style={{width:'90%'}}>
 <Row>
     <Col style={{marginTop:'57px'}} className="left" xs={12} md={6}>
@@ -197,7 +197,7 @@ const Home = () => {
   <h2 style={{paddingBottom:'50px',marginBottom:'10px'}}>GAME CHARACTERS</h2>
   <Swiper
       spaceBetween={20}
-      slidesPerView={6}
+      slidesPerView={'auto'}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -462,18 +462,18 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
   ]}
 />
 </Container> */}
-<Container >
+
 <img width='100%' src={piechart} alt=',,,' />
-</Container>
+
 </Col>
 
-    <Col style={{marginTop:'160px'}} className="left" xs={12} md={6}>
+    <Col style={{marginTop:'100px'}} className="left" xs={12} md={6}>
       <Container >
        <div className="firstsupply">
         <div className="totalsupply">
           <div className="totalsuplydiv">
             <p style={{fontSize:'10px',marginBottom:'-10px'}}>Total supply:</p>
-            <h2 style={{marginTop:'-10px',fontSize:'35px'}}>1,000,000,000</h2>
+            <h2 className='sply'>1,000,000,000</h2>
           </div>
         </div>
       </div>

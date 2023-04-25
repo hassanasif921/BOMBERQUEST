@@ -13,11 +13,12 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const Header = () => {
+  var [language , setLanguage] = useState("ENGLISH")
 var [Collapse  , setCollapse] = useState("collapse")
 var [Expend  , setExpend] = useState("false")
 
 async function clickHome(){
-  document.getElementById('home').style.color = '#28f8f8';
+  document.getElementById('home').style.color = '#FFC700';
   document.getElementById('game').style.color = 'white';
   document.getElementById('nft').style.color = 'white';
   document.getElementById('events').style.color = 'white';
@@ -27,7 +28,7 @@ async function clickHome(){
 }
 async function clickGame(){
   document.getElementById('home').style.color = 'white';
-  document.getElementById('game').style.color = '#28f8f8';
+  document.getElementById('game').style.color = '#FFC700';
   document.getElementById('nft').style.color = 'white';
   document.getElementById('events').style.color = 'white';
   document.getElementById('merchs').style.color = 'white';
@@ -37,7 +38,7 @@ async function clickGame(){
 async function clicknft(){
   document.getElementById('home').style.color = 'white';
   document.getElementById('game').style.color = 'white';
-  document.getElementById('nft').style.color = '#28f8f8';
+  document.getElementById('nft').style.color = '#FFC700';
   document.getElementById('events').style.color = 'white';
   document.getElementById('merchs').style.color = 'white';
   document.getElementById('account').style.color = 'white';
@@ -47,7 +48,7 @@ async function clickEvents(){
   document.getElementById('home').style.color = 'white';
   document.getElementById('game').style.color = 'white';
   document.getElementById('nft').style.color = 'white';
-  document.getElementById('events').style.color = '#28f8f8';
+  document.getElementById('events').style.color = '#FFC700';
   document.getElementById('merchs').style.color = 'white';
   document.getElementById('account').style.color = 'white';
 
@@ -57,7 +58,7 @@ async function clickMerchs(){
   document.getElementById('game').style.color = 'white';
   document.getElementById('nft').style.color = 'white';
   document.getElementById('events').style.color = 'white';
-  document.getElementById('merchs').style.color = '#28f8f8';
+  document.getElementById('merchs').style.color = '#FFC700';
   document.getElementById('account').style.color = 'white';
 
 }
@@ -67,13 +68,9 @@ async function clickAccount(){
   document.getElementById('nft').style.color = 'white';
   document.getElementById('events').style.color = 'white';
   document.getElementById('merchs').style.color = 'white';
-  document.getElementById('account').style.color = '#28f8f8';
+  document.getElementById('account').style.color = '#FFC700';
 
 }
-
-
-
-
 
 async function nave() {
   setCollapse('')
@@ -91,7 +88,12 @@ function wave() {
   document.getElementById('nave').style.display = 'block';
   document.getElementById('wave').style.display ='none';
 }
-
+async function setLangeng(){
+  setLanguage('ENGLISH')
+}
+async function setLangchi(){
+  setLanguage('日本語')
+}
 
 useEffect(() => {
  document.getElementById('nave').style.backgroundColor = 'white'
@@ -101,7 +103,7 @@ useEffect(() => {
   return (
 <>
 
-<div style={{marginBottom:'50px'}} id="header">
+<div style={{marginBottom:'-70px'}} id="header">
   <div className="container">
     <nav className="navbar navbar-expand-lg">
       <div className="navbar-brand d-block d-lg-none" href="#">
@@ -113,6 +115,7 @@ useEffect(() => {
       </div>
       <button
       id="nave"
+      style={{color:'black',padding:'10px 20px',borderRadius:'14px'}}
         onClick={nave}
         className="navbar-toggler navbar_toggle"
         type="button"
@@ -122,12 +125,13 @@ useEffect(() => {
         aria-expanded={Expend}
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon" />
+        MENU
+        {/* <span className="navbar-toggler-icon" /> */}
       </button>
       <button
       id="wave"
+      style={{color:'black',display:'none',background: '#FFFFFF',padding:'10px 20px',borderRadius:'14px'}}
         onClick={wave}
-        style={{display:'none'}}
         className="navbar-toggler navbar_toggle"
         type="button"
         data-bs-toggle={Collapse}
@@ -136,7 +140,8 @@ useEffect(() => {
         aria-expanded={Expend}
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon" />
+        CLOSE
+        {/* <span className="navbar-toggler-icon" /> */}
       </button>
       
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -176,12 +181,24 @@ useEffect(() => {
         </div>
         <ul className="navbar-nav">
   
-          <li className="nav-item">
-          <Button  className='dpdown' ><span style={{fontFamily:'sans-serif' , fontWeight:'bolder'}}>ENGLISH</span></Button>
+          <li className="nav-item ">
+          {/* <Button  className='dpdown' ><span style={{fontFamily:'myFirstFont' , fontWeight:'500'}}>ENGLISH</span></Button> */}
+          <Dropdown >
+       
+      <Dropdown.Toggle className='dpdown' variant="Warning" id="dropdown-basic">
+        {language}
+      </Dropdown.Toggle>
+      {/* style={{position:'fixed'}} */}
+      <Dropdown.Menu  className="dropdownbtn"  >
+        <Dropdown.Item onClick={setLangeng} href="#/action-1">ENGLISH</Dropdown.Item>
+        <Dropdown.Item onClick={setLangchi} href="#/action-2">日本語</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
           </li>
           {/* <i className="fas fa-angle-down"></i> */}
           <li style={{marginLeft:'2px'}} onClick={clickAccount} className="nav-item">
-         <Button  className='walletbtn'><i className="fas fa-wallet"><span style={{fontFamily:'sans-serif' , fontWeight:'bolder'}}>WALLET</span></i></Button>
+         <Button  className='walletbtn'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontWeight:'500',fontStyle:'initial'}}>WALLET</span></i></Button>
           </li>
       
         </ul>

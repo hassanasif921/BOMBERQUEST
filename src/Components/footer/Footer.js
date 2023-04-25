@@ -6,36 +6,36 @@ import Card from "react-bootstrap/Card";
 import Icons from "../../Assets/logo.png";
 const Footer = () => {
   return (
-    <Container fluid className='bggr' style={{paddingTop:'150px' , paddingBottom:'50px'}}>
+    <Container fluid className='bggr' style={{paddingBottom:'50px'}}>
 
 <Container style={{width:'50%',marginTop:'130px'}}>
-           <Link to={'/'}> <img style={{ width: '50%',marginBottom:'-45px'}} variant="top" src={Icons} /></Link>
+           <Link to={'/'}> <img className='fotrimg' variant="top" src={Icons} /></Link>
 </Container>
       
 
-    <div style={{marginRight:'10px',marginBottom:'50px',marginTop:'50px'}} className="social-icons">
+    <div className="social-icons">
     <a className='ico' href=''>
-      <i  className="fab fa-discord"/>
+      <i  className="fa-brands fa-discord ico3"/>
       <div className="tooltip">Codepen</div>
     </a>
     <a className='ico' href=' '>
-    <i class="fab fa-facebook"></i>
+    <i class="fa-brands fa-facebook ico3"></i>
       <div className="tooltip">Github</div>
     </a>
     <a className='ico' href=' '>
-    <i class="fab fa-youtube"></i>
+    <i class="fa-brands fa-youtube ico3"></i>
       <div className="tooltip">Twitter</div>
     </a>
     <a className='ico' href=' '>
-    <i class="fab fa-instagram"></i>
+    <i class="fa-brands fa-instagram ico3"></i>
       <div className="tooltip">Dribbble</div>
     </a>
     <a className='ico' href=' '>
-    <i class="fab fa-twitter"></i>
+    <i class="fa-brands fa-twitter ico3"></i>
       <div className="tooltip">Instagram</div>
     </a>
     <a className='ico' href=' '>
-    <i class="fab fa-tiktok"></i> 
+    <i class="fa-brands fa-tiktok ico3"></i> 
       <div className="tooltip">LinkedIn</div>
     </a>
   
