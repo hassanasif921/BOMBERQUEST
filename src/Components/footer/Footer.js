@@ -41,7 +41,7 @@ const Footer = () => {
   
   </div>
   <Container style={{marginBottom:'0px',marginTop:'50px'}}>
-    <Link to={'/aboutus'}><span style={{color:'white',marginRight:'20px'}}>@Bomberquest 2022</span></Link>
+    <Link to={'/aboutus'}><span style={{color:'white'}}>@Bomberquest 2022</span></Link>
   </Container>
   <div style={{marginBottom:'50px',marginTop:'0px'}}>
    

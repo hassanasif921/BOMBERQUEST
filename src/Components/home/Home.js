@@ -6,7 +6,7 @@ import "./style.css";
 // ES6 Modules or TypeScript
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
-
+import Video from '../../Assets/official.MP4'
 import image1 from '../../Assets/General images/x2/Block 3.png'
 import piechart from '../../Assets/General images/x1/piechart.png'
 import c1 from '../../Assets/General images/x1/block 4 - characters/photo-1.png'
@@ -108,7 +108,7 @@ const Home = () => {
 <div className='vidbox'>
   <div className="buttons">
     <a
-      href="https://www.youtube.com/watch?v=RHH3tUGDd5I"
+      href="../../Assets/official.MP4"
       data-youtube-id="RHH3tUGDd5I"
       className="video-thumb js-trigger-modal"
     >
@@ -126,18 +126,21 @@ const Home = () => {
   <section className="video-modal">
     {/* Modal Content Wrapper */}
     <div id="video-modal-content" className="video-modal-content">
-      <img
+      {/* <img
         className="video-sizer"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABaAQAAAAAXvWD/AAAAAnRSTlMAAHaTzTgAAAAWSURBVHgBY6ABGAWjYBSMglEwCkYBAAdiAAFufS70AAAAAElFTkSuQmCC"
-      />
-      <iframe
+      /> */}
+      {/* <iframe
         id="youtube"
         width="100%"
         height="100%"
         frameBorder={0}
         allowFullScreen=""
         src=""
-      />
+      /> */}
+     <video style={{borderRadius:'44px',width:'100%'}} controls autoPlay>
+      <source src={Video} type="video/mp4"/>
+     </video>
       <a href="#" className="close-video-modal">
         <svg version="1.1" viewBox="0 0 469.785 469.785">
           <g transform="matrix(1.25 0 0 -1.25 0 45)">
