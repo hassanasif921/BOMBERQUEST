@@ -2,7 +2,7 @@ import { BrowserRouter, Router } from 'react-router-dom';
 import { Route , Routes , useLocation} from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import ma from './Assets/ma.png'
 import './App.css';
 
 import Header from './Components/header/Header';
@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     
   },[pathValue]);
-  console.clear();
+  
   return (
     <div className="App">
        <div className="banner container-fluid">
@@ -37,7 +37,7 @@ function App() {
             className='imagemob'
               style={{ width: "100%", borderRadius: "10px" }}
               variant="top"
-              src='https://s3-alpha-sig.figma.com/img/2740/27a0/c2e23ca9fe66df5bde3fb445a9af7b1a?Expires=1682899200&Signature=nOAvUu~rGrUKl8Cd75yr-CX~GqtM0djnr99u5zX1ij2NqsAX-klNyKwtbBx3o7qshWKzrMwLibFv9sjdos87GG25Ic4Nranr-xwrP7o5XZ~c1I8ILdL2UFnR49OybUIpDRQ4~vBaROg6gj6SUEBo1UAvcg3i9bHWagD4YMeikMszDGu4uiIbhWfkONElyl5GLeKhjj5jX2NFWxQiwf61iiWq0NqO9YcZBVDz1h6EhWhrFY9MvOYpNmnkv-niREYDd~n79sXF1I~01r-9-knGCGxg~CqcxEA~kA35AHZGd9NvYvrfeSSvlNAjmU4fLBX-tXYYmcifSMQut9ttjMWdHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+              src={ma}
               />
           <Row className='left'>
             <Col xs={12} md={6}>
@@ -78,7 +78,7 @@ function App() {
             className='images'
               style={{ width: "85%", borderRadius: "10px" }}
               variant="top"
-              src='https://s3-alpha-sig.figma.com/img/2740/27a0/c2e23ca9fe66df5bde3fb445a9af7b1a?Expires=1682899200&Signature=nOAvUu~rGrUKl8Cd75yr-CX~GqtM0djnr99u5zX1ij2NqsAX-klNyKwtbBx3o7qshWKzrMwLibFv9sjdos87GG25Ic4Nranr-xwrP7o5XZ~c1I8ILdL2UFnR49OybUIpDRQ4~vBaROg6gj6SUEBo1UAvcg3i9bHWagD4YMeikMszDGu4uiIbhWfkONElyl5GLeKhjj5jX2NFWxQiwf61iiWq0NqO9YcZBVDz1h6EhWhrFY9MvOYpNmnkv-niREYDd~n79sXF1I~01r-9-knGCGxg~CqcxEA~kA35AHZGd9NvYvrfeSSvlNAjmU4fLBX-tXYYmcifSMQut9ttjMWdHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+              src={ma}
               />
             </Col>
           </Row>

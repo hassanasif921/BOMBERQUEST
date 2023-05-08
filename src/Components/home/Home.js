@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 
 import "./style.css";
+import block from '../../Assets/block.png'
 
 // ES6 Modules or TypeScript
 import Swal from "sweetalert2";
@@ -406,7 +407,7 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
     <Col xs={12} md={6}>
 <Container>
   
-<img style={{width:'100%' , height:'100%'}} src="https://s3-alpha-sig.figma.com/img/b71f/05e3/24c49f52bc5a467e7eecdddcc620c32b?Expires=1682899200&Signature=CRV5qewRK02kjO40T7J~FUFgNtCPD4gMx01MwIVt3TSE-HrQTViPokPGCvKPLizORJ82tl1RNSw~1Y3Hs4XIbN5NhDan1WEcYFmCmDFqPulX~fhpjeZpGebaaGbkn9Ja1xBe1Uz4ybgkBTcGfp-cgXED81fVagiXu8CTPkA-QpYI9P-r8wxuXt5lX09vNycye9sLAs2LhKkWs305Gp-W6Dx-rtNu-MnYhA1Jy-nvtHJL3V-sfA5IG90e4drp-tSaS-9EWu0D8M5Qzp-KfgK5KlNUYr92uHnnpfHcTY3xjE6WtJ0pPXmiQIVNY~Wc8l1l7wo6lMlQRSPP0hxvbHZwdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="..." />
+<img style={{width:'100%' , height:'100%'}} src={block} alt="..." />
     
 </Container>
 </Col>

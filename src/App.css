@@ -59,7 +59,7 @@ body {
 .banner{
   background-image:
   linear-gradient(to bottom,rgba(2, 13, 40, 0) 0%, #020D28),
-  url('https://s3-alpha-sig.figma.com/img/21ce/6e7f/cd87acd6fc016382aca6504788518f30?Expires=1682899200&Signature=X5GGi-y-PFNaJXkPr1QwrW9d3re7jamrvvFlMQRMv-RnYJI37V3XGbUHbdjoHws4hzfMM-XGFTAvJ72istOgbIomYEp-55l3W-FxDtO8LqR0diiff-OwxelF-ieSs1fRyBqMvFGj6ZqHDnURIWT-FOZtYQjXE-pGSiWlRh9SwEeuPah69LiQmpeePbcpAXBU1yCYuwFul1R5i2dzz3Y7kJQj~OG2kYHrRwlZWyK3i0mV5eswK1BLBebiW4nqhaku1ka2hzKnTfhGkO2SzX6yxKGZvO43JLE5Np1P6jHCzwz0YDwYpjlILH0LAScBcACpeRm0hvWr~I0Mz~o3X6WZ7w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+  url('./Assets/blockbg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
