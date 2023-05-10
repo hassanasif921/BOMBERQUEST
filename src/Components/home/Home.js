@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 
 import "./style.css";
-import block from '../../Assets/block.png'
 
 // ES6 Modules or TypeScript
 import Swal from "sweetalert2";
@@ -27,6 +26,7 @@ import ico8 from '../../Assets/General images/x1/partners logo/image 6.png'
 import ico9 from '../../Assets/General images/x1/partners logo/image 7.png'
 import ico10 from '../../Assets/General images/x1/partners logo/image 8.png'
 import ico11 from '../../Assets/General images/x1/partners logo/image 9.png'
+import imgpost from '../../Assets/post.png'
 
 import play1 from '../../Assets/General images/x1/block 5 - image 1.png'
 import play2 from '../../Assets/General images/x1/block 5 - image 2.png'
@@ -102,8 +102,8 @@ const Home = () => {
 <Row>
   <Col  xs={12} md={2}></Col>
   <Col xs={12} md={8}>
-  <h2>WHAT IS THE BOMBER QUEST?</h2>
-<p style={{fontSize:'14px'}}>Bomber Quest is a P2E game that allows users to generate a lot of revenue. Gamers can put their energy<br /> into successfully completing adventures in the game, fight to the death to survive in the crypto world,<br /> and earn an income from playing the game.</p>
+  <h2 className='h2h'>WHAT IS THE BOMBER QUEST?</h2>
+<p className='paras'>Bomber Quest is a P2E game that allows users to generate a lot of revenue. Gamers can put their energy<br /> into successfully completing adventures in the game, fight to the death to survive in the crypto world,<br /> and earn an income from playing the game.</p>
    <Container>
 <div className='vidbox2' >
 <div className='vidbox'>
@@ -177,14 +177,19 @@ const Home = () => {
 <Container fluid style={{width:'90%'}}>
 <Row>
     <Col style={{marginTop:'57px'}} className="left" xs={12} md={6}>
-      <h2 >PLAY TO EARN</h2>
-      <p style={{fontSize:'15px',paddingBottom:'40px',paddingTop:'10px'}}>Manage heroes, explore the world together, defeat monsters and bosses to free kingdoms under attack by monsters, and get tokens.</p>
+      <h2 className='h2h' >PLAY TO EARN</h2>
+      <p className='parasleft' style={{paddingBottom:'40px',paddingTop:'10px'}}>Manage heroes, explore the world together, defeat monsters and bosses to free kingdoms under attack by monsters, and get tokens.</p>
       <Row style={{marginTop:'20px',marginBottom:'6px'}} className='left'>
             <Col xs={12} md={6}>
+            <div className='whiteborder'>
             <Button className='btnWhite' >GETTING STARTED</Button>
+            </div>
             </Col>
             <Col xs={12} md={6}>
-             <Button  className='btnYellow' >MARKETPLACE</Button></Col>
+            <div className='yellowborder'>
+             <Button  className='btnYellow' >MARKETPLACE</Button>
+             </div>
+             </Col>
           </Row>
     </Col>
    
@@ -198,7 +203,7 @@ const Home = () => {
 
 
 <Container fluid className="banar2">
-  <h2 style={{paddingBottom:'50px',marginBottom:'10px'}}>GAME CHARACTERS</h2>
+  <h2 className='h2h' style={{paddingBottom:'50px',marginBottom:'10px'}}>GAME CHARACTERS</h2>
   <Swiper
       spaceBetween={20}
       slidesPerView={'auto'}
@@ -273,7 +278,7 @@ const Home = () => {
 
 
 <Container fluid className="gameplay" >
-<h2 style={{paddingTop:'50px',paddingBottom:'50px',marginBottom:'50px'}}>GAME PLAY</h2>
+<h2 className='h2h' style={{paddingTop:'50px',paddingBottom:'50px',marginBottom:'50px'}}>GAME PLAY</h2>
 
 <Container>
 <Row className="left colorblue">
@@ -283,8 +288,8 @@ const Home = () => {
       {/* xs={12} */}
       <Col md={8}>
       <Card.Body>
-        <Card.Title style={{fontWeight:'bolder'}}>Treasure Hunt Mode</Card.Title>
-        <Card.Text style={{fontSize:'15px'}}>
+        <Card.Title className='ph'>Treasure Hunt Mode</Card.Title>
+        <Card.Text className='parasleft'>
         In Treasure Hunt Mode, players can dispatch bomber heroes to mining zones, instructing them to plant bombs to demolish blocks to recover BBQ tokens. These heroes can work automatically, without the need for players to be present at all times, allowing them to free up valuable time for other chores while they are playing.
 In addition, each time a bomb is detonated, the hero expends vitality. When the hero's energy reserves are depleted, he will enter a resting condition to replenish his reserves. If you purchase a home, the charging speed will be increased significantly.
         </Card.Text>
@@ -299,8 +304,8 @@ In addition, each time a bomb is detonated, the hero expends vitality. When the 
       {/* xs={12} */}
       <Col md={8}>
       <Card.Body>
-        <Card.Title style={{fontWeight:'bolder'}}>Story Mode</Card.Title>
-        <Card.Text style={{fontSize:'15px'}}>
+        <Card.Title className='ph'>Story Mode</Card.Title>
+        <Card.Text className='parasleft'>
         In Story mode, players create their bomber hero who will participate in each story level. To advance through each class, the player must destroy all enemies. Breaking down blocks and killing creatures allows players to receive BBQ Tokens.
 Participating in a level necessitates the use of the bomber hero's energy. As a result, if there is insufficient energy, the hero will not be able to participate at any level. Furthermore, if a monster touches you during the game, you will suffer an energy loss. If the hero's energy level reaches zero, you will be defeated in the fight.
      </Card.Text>
@@ -315,8 +320,8 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
       {/* xs={12} */}
       <Col md={8}>
       <Card.Body>
-        <Card.Title style={{fontWeight:'bolder'}}>Battle Mode</Card.Title>
-        <Card.Text style={{fontSize:'15px'}}>
+        <Card.Title className='ph'>Battle Mode</Card.Title>
+        <Card.Text className='parasleft'>
         In Combat mode, players take part in a bomb struggle in which they must battle against other players. Not only do players require a specific sort of energy to participate, but they also must pay an admission fee in the form of tokens, which will subsequently be used as rewards. The final winner receives the vast bulk of the tokens from the losers.
        </Card.Text>
       
@@ -330,7 +335,7 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
 
 <Container fluid className="roadmaps">
 <Container>
-  <h2 style={{marginBottom:'60px'}}>ROAD MAP</h2>
+  <h2 className='h2h' style={{marginBottom:'60px'}}>ROAD MAP</h2>
 {/* <div className="roadmap-container"></div> */}
   <Row>
     <Col className='left' xs={12} md={3}>
@@ -407,7 +412,7 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
     <Col xs={12} md={6}>
 <Container>
   
-<img style={{width:'100%' , height:'100%'}} src={block} alt="..." />
+<img style={{width:'100%' , height:'100%'}} src={imgpost} alt="..." />
     
 </Container>
 </Col>
@@ -415,8 +420,8 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
     <Col className="left" xs={12} md={6}>
 <Container style={{marginTop:'80px'}}>
   
-<h2>What is $BBQ </h2>
-      <p style={{fontSize:'12px',marginBottom:'34px'}}>Token is the main in-game currency. It will be used to buy Bomber hero at Market Place, Items of Upgrade Bomber level, buy House, mainly in the first phase.</p>
+<h2 className='h2h'>What is $BBQ </h2>
+      <p className='parasleft' style={{marginBottom:'34px'}}>Token is the main in-game currency. It will be used to buy Bomber hero at Market Place, Items of Upgrade Bomber level, buy House, mainly in the first phase.</p>
       <span>Token Official Contract Address:</span>
       <label className="search-label">
   <span
@@ -431,10 +436,15 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
 
       <Row style={{marginTop:'10px',marginBottom:'6px'}} className='left'>
             <Col xs={12} md={6}>
+            <div className='whiteborder'>
             <Button className='btnWhite' >GO SWAP</Button>
+            </div>
             </Col>
             <Col xs={12} md={6}>
-             <Button  className='btnYellow' >ADD TO METAMASK</Button></Col>
+            <div className='yellowborder'>
+             <Button  className='btnYellow' >ADD TO METAMASK</Button>
+             </div>
+             </Col>
           </Row>
 
 </Container>
@@ -447,7 +457,7 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
 
 
 <Container fluid className="tokenomicbg" style={{marginTop:'80px'}}>
-<h2 style={{paddingTop:'50px',paddingBottom:'0px',marginBottom:'10px'}}>TOKEN METRIC</h2>
+<h2 className='h2h' style={{paddingTop:'50px',paddingBottom:'0px',marginBottom:'10px'}}>TOKEN METRIC</h2>
 
   <Row>
     <Col xs={12} md={6}>
@@ -472,12 +482,12 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
 </Col>
 
     <Col style={{marginTop:'100px'}} className="left" xs={12} md={6}>
-      <Container >
+      <Container className='left' >
        <div className="firstsupply">
         <div className="totalsupply">
           <div className="totalsuplydiv">
             <p style={{fontSize:'10px',marginBottom:'-10px'}}>Total supply:</p>
-            <h2 className='sply'>1,000,000,000</h2>
+            <h2 className='sply h2h'>1,000,000,000</h2>
           </div>
         </div>
       </div>
@@ -512,11 +522,11 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
   </Row>
 </Container>
 
-<Container fluid className='partner' style={{paddingTop:'80px',paddingBottom:'80px'}}>
+{/* <Container fluid className='partner' style={{paddingTop:'80px',paddingBottom:'80px'}}>
  <Container style={{width:'100%'}}>
- <h2 style={{paddingTop:'50px',paddingBottom:'20px',marginBottom:'50px'}}>PARTNERS</h2>
+ <h2 className='h2h' style={{paddingTop:'50px',paddingBottom:'20px',marginBottom:'50px'}}>PARTNERS</h2>
   <Row>
-  {/* <Col xs={1} md={1}></Col> */}
+
     <Col className="icon" xs={5} md={2}>
       <img className='iconImg' src={ico1} alt="..." />
     </Col>
@@ -551,10 +561,9 @@ Participating in a level necessitates the use of the bomber hero's energy. As a 
       <img className='iconImg' src={ico11} alt="..." />
     </Col>
 
-  {/* <Col xs={1} md={1}></Col> */}
   </Row>
  </Container>
-</Container>
+</Container> */}
    </>
   );
 };

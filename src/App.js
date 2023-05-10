@@ -2,9 +2,10 @@ import { BrowserRouter, Router } from 'react-router-dom';
 import { Route , Routes , useLocation} from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import ma from './Assets/ma.png'
+
 import './App.css';
 
+import groupnft from './Assets/animegroup.png'
 import Header from './Components/header/Header';
 import Footer from './Components/footer/Footer';
 import Home from './Components/home/Home';
@@ -22,12 +23,12 @@ function App() {
   useEffect(() => {
     
   },[pathValue]);
-  
+  console.clear();
   return (
     <div className="App">
        <div className="banner container-fluid">
        {pathValue === "/admin"?"":<Header />}
-        <Container >
+        <Container fluid className='upcontainer'  >
           <Row style={{ height: "100%" }}>
           <Col xs={12} md={6}>
           <h1 className="hding">
@@ -37,15 +38,21 @@ function App() {
             className='imagemob'
               style={{ width: "100%", borderRadius: "10px" }}
               variant="top"
-              src={ma}
+              src={groupnft}
               />
-          <Row className='left'>
+          <Row className='left btnup'>
             <Col xs={12} md={6}>
-            <Button className='btnWhite' >GETTING STARTED</Button>
+            <div className='whiteborder'>
+            <Button className='btnWhite btnstext' >GETTING STARTED</Button>
+            </div>
             </Col>
             <Col xs={12} md={6}>
-             <Button  className='btnYellow' >MARKETPLACE</Button></Col>
-            <div className="social-icons">
+            <div className='yellowborder'>
+            <Button  className='btnYellow btnstext' >MARKETPLACE</Button>
+            </div>
+             </Col>
+             <Container fluid>
+             <div className="social-icons">
     <a className='ico2' href='https://discord.gg/Xpk25q6vRy'>
     <i class="fa-brands fa-discord ico3"></i>
   
@@ -71,14 +78,16 @@ function App() {
 
     </a>
            </div>
+             </Container>
           </Row>
+          
           </Col>
             <Col xs={12} md={6}>
             <Card.Img 
             className='images'
-              style={{ width: "85%", borderRadius: "10px" }}
+              style={{ width: "75%", borderRadius: "10px" }}
               variant="top"
-              src={ma}
+              src={groupnft}
               />
             </Col>
           </Row>

@@ -1,10 +1,12 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url('../../Assets/Anek_Malayalam/AnekMalayalam-VariableFont_wdth\,wght.ttf');
+  }
+
 .bgtwo{
     background: linear-gradient(180deg, #020D28 0%, rgba(2, 13, 40, 0) 26.13%, rgba(2, 13, 40, 0) 58.78%, #020D28 100%);
 }
-h2{
-	font-weight: 900;
-	font-family: 'Roboto', sans-serif;
-}
+
 .vidbox{
 background: rgba(255, 255, 255, 0.07);
 border-radius: 12px;
@@ -356,9 +358,17 @@ border-color: #4E00F5 !important;
     margin: -13px -15px;
 }
 .pra{
-	font-size: 12px;
-	line-height: 60%;
-	font-weight: 200;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 133.25%;
+	/* or 21px */
+	
+	
+	/* White */
+	
+	color: #FFFFFF;
+	
 }
 .gameplay{ 
 	background-image:
@@ -465,7 +475,7 @@ border-radius: 12px;
 .tokenomicbg{
 	background-image:
 	linear-gradient(180deg, #020D28 0%, rgba(2, 13, 40, 0.6) 40.1%, #020D28 100%),
-	url('../../Assets/block8.png');
+	url('../../Assets/tokonomicbackground.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -819,7 +829,200 @@ top: 12px; */
 	margin-top: -10px;
 	font-size: 35px;
   }
+ 
+  .ico{
+	padding: 3px 13px;
+	background: rgba(57, 5, 82, 0.8);
+	border-radius: 10px;
+	color: #ffffff;
+	margin-right: 5px;
+  }
+  .ico:hover{
+	padding: 3px 13px;
+	background: rgba(57, 5, 82, 0.8);
+	border-radius: 10px;
+	color: #FFC700;
+	margin-right: 5px;
+  }
+
+.fab, .far {
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 26px;
+}
+.btnWhite{
+background: #FFFFFF;
+  border-radius: 12px;
+  width: 100%;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: #020C27;
+  margin-bottom: 0px;
+  border: 0px;
+  }
+  .btnWhite:hover{
+	background: #FFF8D2;
+  border-radius: 12px;
+  color: #020C27;
+  width: 100%;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  border: 0px;
+  }
+  .btnYellow{
+	background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
+	border-radius: 12px;
+	margin-bottom: 0px;
+	width: 100%;
+	padding: 0.8em 1.3em 0.8em 0.9em;
+	color: #020C27;
+	border: 0px;
+  }
+  .btnYellow:hover{
+	background: linear-gradient(243.28deg, #FFC700 -65.24%, #FEA210 66.74%);
+	border-radius: 12px;
+	width: 100%;
+	padding: 0.8em 1.3em 0.8em 0.9em;
+	color: #020C27;
+	border: 0px;
+  }
+
+.btnstext{
+	font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 23px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+/* Black */
+
+color: #020D28;
+}
+
+.paras{
+	font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 133.25%;
+/* or 21px */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.ph{
+	font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 111.75%;
+/* or 31px */
+
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+font-stretch: 96;
+}
+
+.parasleft{
+	font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 133.25%;
+/* or 21px */
+
+text-align: left;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+  .imagemob{
+	display: none;
+  }
+
+  
+  /* style={{marginRight:'28px',marginBottom:'50px',marginTop:'150px'}}  */
+  .social-icons{
+	margin-right: 28px;
+	margin-bottom: 110px;
+	margin-top: 80px;
+  }
   @media screen and (max-width: 950px) {
+
+	h1{
+		font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 111.75%;
+/* identical to box height, or 38px */
+
+text-transform: uppercase;
+
+/* White */
+font-family: myFirstFont;
+color: #FFFFFF;
+font-stretch: 96;
+	  }
+	  
+	  h2 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 111.75%;
+		/* or 31px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		font-family: myFirstFont;
+	  }
+	  h3 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 111.75%;
+		/* identical to box height, or 27px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		font-family: myFirstFont;
+	  }
+	  h4 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 111.75%;
+		/* or 22px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		
+		font-family: myFirstFont;
+	  }
+	  
+
+
+
 	.roadmap-container {
 	  padding: 22px 0;
 	}
@@ -886,69 +1089,6 @@ top: 12px; */
 	  width: auto;
 	}
   }
-  .ico{
-	padding: 3px 13px;
-	background: rgba(57, 5, 82, 0.8);
-	border-radius: 10px;
-	color: #ffffff;
-	margin-right: 5px;
-  }
-  .ico:hover{
-	padding: 3px 13px;
-	background: rgba(57, 5, 82, 0.8);
-	border-radius: 10px;
-	color: #FFC700;
-	margin-right: 5px;
-  }
-
-.fab, .far {
-    font-weight: 400;
-    color: white;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-bottom: 26px;
-}
-.btnWhite{
-background: #FFFFFF;
-  border-radius: 12px;
-  width: 100%;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  color: #020C27;
-  border: 0px;
-  }
-  .btnWhite:hover{
-	background: #FFF8D2;
-  border-radius: 12px;
-  color: #020C27;
-  width: 100%;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  border: 0px;
-  }
-  .btnYellow{
-	background: linear-gradient(180deg, #FFC700 0%, #F9A22E 100%);
-	border-radius: 12px;
-	width: 100%;
-	padding: 0.8em 1.3em 0.8em 0.9em;
-	color: #020C27;
-	border: 0px;
-  }
-  .btnYellow:hover{
-	background: linear-gradient(243.28deg, #FFC700 -65.24%, #FEA210 66.74%);
-	border-radius: 12px;
-	width: 100%;
-	padding: 0.8em 1.3em 0.8em 0.9em;
-	color: #020C27;
-	border: 0px;
-  }
-  .imagemob{
-	display: none;
-  }
-  /* style={{marginRight:'28px',marginBottom:'50px',marginTop:'150px'}}  */
-  .social-icons{
-	margin-right: 28px;
-	margin-bottom: 50px;
-	margin-top: 150px;
-  }
   @media only screen and (max-width: 915px) {
 	.images{
 		display: none;
@@ -959,7 +1099,17 @@ background: #FFFFFF;
 	.social-icons{
 		margin-right: 0px;
 		margin-bottom: 0px;
-		margin-top: 100px;
+		margin-top: 40px;
+		width: max-content;
+	  }
+	  .social-iconsFooter{
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-top: 40px;
+		width: max-content;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 60px;
 	  }
 	.hding{
 		text-align: left;
@@ -981,26 +1131,69 @@ background: #FFFFFF;
 		margin-left: 20px;
 		margin-bottom: 26px;
 	  }
-	  .ico {
-		/* padding: 13px 20px 10px 0px; */
-		background: rgba(57, 5, 82, 0.8);
-		border-radius: 10px;
-		margin-right: 4px;
+	
+	  h1{
+		font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 111.75%;
+/* identical to box height, or 38px */
+
+text-transform: uppercase;
+
+/* White */
+font-family: myFirstFont;
+color: #FFFFFF;
+font-stretch: 96;
 	  }
-	  h2 {
+	  
+	  .h2h {
 		font-style: normal;
 		font-weight: 800;
-		text-transform: uppercase;
 		font-size: 28px;
+		line-height: 111.75%;
+		/* or 31px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
 		font-family: myFirstFont;
 	  }
 	  h3 {
 		font-style: normal;
 		font-weight: 800;
-		text-transform: uppercase;
 		font-size: 24px;
+		line-height: 111.75%;
+		/* identical to box height, or 27px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
 		font-family: myFirstFont;
 	  }
+	  h4 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 111.75%;
+		/* or 22px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		
+		font-family: myFirstFont;
+	  }
+	  
 	  .firstsupply{
 		background: linear-gradient(212.07deg, rgba(139, 0, 248, 0) 63.85%, #8B00F8 90.84%);
 		border: 2px solid;
@@ -1026,16 +1219,77 @@ background: #FFFFFF;
 		margin-top: -5px;
 		/* font-size: medium; */
 	  }
-	  h4 {
-		font-style: normal;
-		font-weight: 800;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-family: myFirstFont;
-	  }
+
 	  .fotrimg{
 		width: 100%;
-		margin-bottom: -45px;
+		margin-bottom: 0px;
 	  }
 	  
   }
+
+
+  
+
+h1{
+	font-family: myFirstFont;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 65px;
+	line-height: 111.75%;
+	/* identical to box height, or 73px */
+  
+	text-transform: uppercase;
+  
+	/* White */
+  
+	color: #FFFFFF;
+	font-stretch: 96;
+  }
+  
+  h2 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 111.75%;
+	/* identical to box height, or 54px */
+	
+	text-transform: uppercase;
+	
+	/* White */
+	
+	color: #FFFFFF;
+	font-stretch: 96;
+	font-family: myFirstFont;
+  }
+  h3 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 111.75%;
+	/* or 40px */
+	
+	text-transform: uppercase;
+	
+	/* White */
+	
+	color: #FFFFFF;
+	font-stretch: 96;
+	font-family: myFirstFont;
+  }
+  h4 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 111.75%;
+	/* or 31px */
+	
+	text-transform: uppercase;
+	
+	/* White */
+	
+	color: #FFFFFF;
+	font-stretch: 96;
+	font-family: myFirstFont;
+  }
+  
+  

@@ -11,6 +11,10 @@
     transition: none;
     margin-bottom: 10px;
 }
+.upcontainer{
+  margin-top: 20px;
+  width: 100%;
+}
 body {
   font-family: myFirstFont;
   font-size: 18px;
@@ -23,6 +27,25 @@ body {
   height: 40vmin;
   pointer-events: none;
 }
+.whiteborder{
+  padding: 4px;
+  width: 88%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+
+}
+
+.yellowborder{
+  padding: 4px;
+  width: 88%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 214, 0, 0.26);
+  border-radius: 16px;
+  margin-left: -13%;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -59,13 +82,13 @@ body {
 .banner{
   background-image:
   linear-gradient(to bottom,rgba(2, 13, 40, 0) 0%, #020D28),
-  url('./Assets/blockbg.png');
+  url('./Assets/backgroundapp.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: fit-content;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 45px;
   padding-bottom: 40px;
   margin-top: -42px;
 }
@@ -97,26 +120,248 @@ body {
   /* font-stretch: 96; */
 }
 
+.header{
+  margin-bottom: -70px;
+}
+.btnup{
+  margin-top: 60px;
+}
+
+
+.fab{
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 26px;
+  }
+  .ico2 {
+    /* padding: 0.7rem 0.5rem 0.5rem 0rem; */
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-right: 6px;
+    color: #FFFFFF;
+    padding: 3px 10px !important;
+  }
+  .ico3{
+    font-size: 16px;
+  }
+.ico3:hover{
+  color: #F9A22E;
+}
+.ico4{
+  color: #16A3ED;
+}
+.ico4:hover{
+  color: #F9A22E;
+}
+
+
+@media screen and (max-width: 950px) {
+  .whiteborder{
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+  
+  }
+  
+  .yellowborder{
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 214, 0, 0.26);
+    border-radius: 16px;
+    margin-left: 0%;
+  }
+ 
+  .container {
+    /* width: 100%; */
+    /* padding-right: 15px; */
+    text-align: center;
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+/* .ico3{
+  font-size: 14px;
+} */
+.fa-discord:before {
+  content: "\f392";
+  font-size: larger;
+}
+.fa-facebook:before {
+  content: "\f09a";
+  font-size: larger;
+}
+.fa-youtube:before {
+  content: "\f167";
+  font-size: larger;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-size: larger;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+  font-size: larger;
+}
+.fa-tiktok:before {
+  content: "\e07b";
+  font-size: larger;
+}
+  .ico2 {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 10px 16px !important;
+  }
+  
+  .ico {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 10px 16px !important;
+  }
+  
+  .btnup{
+    margin-top: 0px;
+  }
+
+  .header{
+    margin-bottom: -110px;
+  }
+  .upcontainer{
+    /* margin-top: 20px; */
+    width: 100%;
+  }
+
+	h1{
+		font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 111.75%;
+/* identical to box height, or 38px */
+
+text-transform: uppercase;
+
+/* White */
+font-family: myFirstFont;
+color: #FFFFFF;
+font-stretch: 96;
+	  }
+	  
+	  h2 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 111.75%;
+		/* or 31px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		font-family: myFirstFont;
+	  }
+	  h3 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 111.75%;
+		/* identical to box height, or 27px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		font-family: myFirstFont;
+	  }
+	  h4 {
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 111.75%;
+		/* or 22px */
+		
+		text-transform: uppercase;
+		
+		/* White */
+		
+		color: #FFFFFF;
+		font-stretch: 96;
+		
+		font-family: myFirstFont;
+	  }
+  }
+
+
+
+h1{
+  font-family: myFirstFont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 111.75%;
+  /* identical to box height, or 73px */
+
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #FFFFFF;
+  font-stretch: 96;
+}
 
 h2 {
   font-style: normal;
   font-weight: 800;
+  font-size: 48px;
+  line-height: 111.75%;
+  /* identical to box height, or 54px */
+  
   text-transform: uppercase;
-  font-size: 35px;
+  
+  /* White */
+  
+  color: #FFFFFF;
+  font-stretch: 96;
   font-family: myFirstFont;
 }
 h3 {
   font-style: normal;
   font-weight: 800;
-  text-transform: uppercase;
   font-size: 36px;
+  line-height: 111.75%;
+  /* or 40px */
+  
+  text-transform: uppercase;
+  
+  /* White */
+  
+  color: #FFFFFF;
+  font-stretch: 96;
   font-family: myFirstFont;
 }
 h4 {
   font-style: normal;
   font-weight: 800;
-  text-transform: uppercase;
   font-size: 28px;
+  line-height: 111.75%;
+  /* or 31px */
+  
+  text-transform: uppercase;
+  
+  /* White */
+  
+  color: #FFFFFF;
+  font-stretch: 96;
   font-family: myFirstFont;
 }
 
@@ -130,35 +375,9 @@ h4 {
   justify-content: right;
 }
 
-.ico2 {
-  /* padding: 0.7rem 0.5rem 0.5rem 0rem; */
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  margin-right: 6px;
-  color: #FFFFFF;
-  padding: 3px 10px !important;
-}
+
 .swiper-backface-hidden .swiper-slide {
   transform: translateZ(0);
   backface-visibility: hidden;
   width: auto;
-}
-.fab{
-  font-weight: 400;
-  color: white;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-bottom: 26px;
-  }
-  .ico3{
-    font-size: 15px;
-  }
-.ico3:hover{
-  color: #F9A22E;
-}
-.ico4{
-  color: #16A3ED;
-}
-.ico4:hover{
-  color: #F9A22E;
 }

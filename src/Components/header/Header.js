@@ -103,8 +103,8 @@ useEffect(() => {
   return (
 <>
 
-<div style={{marginBottom:'-70px'}} id="header">
-  <div className="container">
+<div className="header" id="header">
+  <div  className="container-fluid upcontainer">
     <nav className="navbar navbar-expand-lg">
       <div className="navbar-brand d-block d-lg-none" href="#">
        
@@ -151,22 +151,22 @@ useEffect(() => {
               HOME
             </Link>
           </li>
-          <li style={{marginRight:"initial",fontSize:'12px'}} className="nav-item">
+          <li className="nav-item">
             <Link to={'/game'} id="game" onClick={clickGame} className="nav-link" >
               NFT         
             </Link>
           </li>
-          <li style={{marginRight:"initial",fontSize:'12px'}} className="nav-item">
+          <li className="nav-item">
             <Link to={'/nft'} id="nft" onClick={clicknft} className="nav-link" >
             MARKET 
             </Link>
           </li>
-          <li style={{marginRight:"initial",fontSize:'12px'}} className="nav-item">
+          <li className="nav-item">
             <Link to={'/nft'} id="nft" onClick={clicknft} className="nav-link" >
             DOCS 
             </Link>
           </li>
-          <li style={{marginRight:"initial",fontSize:'12px'}} className="nav-item">
+          <li className="nav-item">
             <Link to={'/nft'} id="nft" onClick={clicknft} className="nav-link" >
             ABOUT 
             </Link>
@@ -175,7 +175,7 @@ useEffect(() => {
         <div className="navbar-brand d-none d-lg-block" href="#">
           
             <div className="logo center-logo">
-           <Link to={'/'}> <Card.Img  style={{ width: '40%' ,marginTop:'-36px',marginBottom:'-40px',marginLeft:'50px'}} variant="top" src={Icons} /></Link>
+           <Link to={'/'}> <Card.Img  style={{ width: '30%' ,marginTop:'-36px',marginBottom:'-40px',marginLeft:'10px'}} variant="top" src={Icons} /></Link>
             </div>
       
         </div>
@@ -185,7 +185,7 @@ useEffect(() => {
           {/* <Button  className='dpdown' ><span style={{fontFamily:'myFirstFont' , fontWeight:'500'}}>ENGLISH</span></Button> */}
           <Dropdown >
        
-      <Dropdown.Toggle className='dpdown' variant="Warning" id="dropdown-basic">
+      <Dropdown.Toggle className='dpdown nav-link' style={{marginRight:'10px'}} variant="Warning" id="dropdown-basic">
         {language}
       </Dropdown.Toggle>
       {/* style={{position:'fixed'}} */}
@@ -198,7 +198,7 @@ useEffect(() => {
           </li>
           {/* <i className="fas fa-angle-down"></i> */}
           <li style={{marginLeft:'2px'}} onClick={clickAccount} className="nav-item">
-         <Button  className='walletbtn'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontWeight:'500',fontStyle:'initial'}}>WALLET</span></i></Button>
+         <Button  className='walletbtn'><i className="fas fa-wallet"><span style={{fontFamily:'myFirstFont', fontWeight:'600',fontStyle:'initial' , fontSize:'16px'}}>WALLET</span></i></Button>
           </li>
       
         </ul>

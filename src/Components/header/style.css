@@ -7,11 +7,32 @@
     padding: -1px 0;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    margin-top: 20px;
+    backdrop-filter: blur(9.5px);
+    margin-top: 7px;
     margin-bottom: 80px;
 }
 .navbar-brand {
     
+}
+.nav-link{
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 23px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+/* White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
 }
 .navbar a {
     text-decoration: none;
@@ -97,10 +118,10 @@ button {
     margin-top: 5px;
     align-items: center;
     font-family: inherit;
-    width: 100%;
+    width: fit-content;
     font-weight: bolder;
     font-size: 17px;
-    padding: 8px 30px 8px 30px;
+    padding: 10px 8px;
     letter-spacing: 0.05em;
 }
 .dpdown:hover{
@@ -113,9 +134,9 @@ button {
     align-items: center;
     font-family: inherit;
     font-weight: bolder;
-    width: 100%;
+    width: fit-content;
     font-size: 17px;
-    padding: 8px 30px 8px 30px;
+    padding: 10px 8px;
     letter-spacing: 0.05em;
 }
 

@@ -13,7 +13,7 @@ const Footer = () => {
 </Container>
       
 
-    <div className="social-icons">
+    <div style={{marginTop:'20px'}} className="social-iconsFooter">
     <a className='ico' href=''>
       <i  className="fa-brands fa-discord ico3"/>
       <div className="tooltip">Codepen</div>
