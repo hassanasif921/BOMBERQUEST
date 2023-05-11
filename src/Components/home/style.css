@@ -55,7 +55,7 @@ transform: rotate(1.54deg);
 }
 .buttons{
 	display:flex;
-	height:50vh;
+	height:60vh;
 	width:auto;
 		background-image:  url(../../Assets/backgrounds/video.png);
 
