@@ -175,7 +175,7 @@ useEffect(() => {
         <div className="navbar-brand d-none d-lg-block" href="#">
           
             <div className="logo center-logo">
-           <Link to={'/'}> <Card.Img  style={{ width: '30%' ,marginTop:'-36px',marginBottom:'-40px',marginLeft:'10px'}} variant="top" src={Icons} /></Link>
+           <Link to={'/'}> <Card.Img  style={{ width: '30%' ,marginTop:'-36px',marginBottom:'-40px',marginLeft:'-80px'}} variant="top" src={Icons} /></Link>
             </div>
       
         </div>
@@ -184,15 +184,15 @@ useEffect(() => {
           <li className="nav-item ">
           {/* <Button  className='dpdown' ><span style={{fontFamily:'myFirstFont' , fontWeight:'500'}}>ENGLISH</span></Button> */}
           <Dropdown >
-       
+{/*        
       <Dropdown.Toggle className='dpdown nav-link' style={{marginRight:'10px'}} variant="Warning" id="dropdown-basic">
         {language}
-      </Dropdown.Toggle>
+      </Dropdown.Toggle> */}
       {/* style={{position:'fixed'}} */}
-      <Dropdown.Menu  className="dropdownbtn"  >
+      {/* <Dropdown.Menu  className="dropdownbtn"  >
         <Dropdown.Item onClick={setLangeng} href="#/action-1">ENGLISH</Dropdown.Item>
         <Dropdown.Item onClick={setLangchi} href="#/action-2">日本語</Dropdown.Item>
-      </Dropdown.Menu>
+      </Dropdown.Menu> */}
     </Dropdown>
 
           </li>
