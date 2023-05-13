@@ -53,7 +53,7 @@ function App() {
              </Col>
              <Container fluid>
              <div className="social-icons">
-    <a className='ico2' href='https://discord.gg/Xpk25q6vRy'>
+    <a className='ico2' href='https://discord.com/invite/zFaSxmNfFK'>
     <i class="fa-brands fa-discord ico3"></i>
   
     </a>
@@ -69,7 +69,7 @@ function App() {
     <i className="fa-brands fa-instagram ico3"></i>
    
     </a>
-    <a className='ico2' href=' '>
+    <a className='ico2' href='https://twitter.com/bomberquest'>
     <i className="fa-brands fa-twitter ico3"></i>
 
     </a>

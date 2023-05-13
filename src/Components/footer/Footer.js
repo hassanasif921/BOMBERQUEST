@@ -14,29 +14,29 @@ const Footer = () => {
       
 
     <div style={{marginTop:'20px'}} className="social-iconsFooter">
-    <a className='ico' href=''>
+    <a className='ico' href='https://discord.com/invite/zFaSxmNfFK'>
       <i  className="fa-brands fa-discord ico3"/>
-      <div className="tooltip">Codepen</div>
+      <div className="tooltip">Discord</div>
     </a>
     <a className='ico' href=' '>
     <i class="fa-brands fa-facebook ico3"></i>
-      <div className="tooltip">Github</div>
+      <div className="tooltip">Facebook</div>
     </a>
-    <a className='ico' href=' '>
+    <a className='ico' href=''>
     <i class="fa-brands fa-youtube ico3"></i>
-      <div className="tooltip">Twitter</div>
+      <div className="tooltip">youtube</div>
     </a>
     <a className='ico' href=' '>
     <i class="fa-brands fa-instagram ico3"></i>
-      <div className="tooltip">Dribbble</div>
+      <div className="tooltip">instagram</div>
     </a>
-    <a className='ico' href=' '>
+    <a className='ico' href='https://twitter.com/bomberquest'>
     <i class="fa-brands fa-twitter ico3"></i>
-      <div className="tooltip">Instagram</div>
+      <div className="tooltip">Twitter</div>
     </a>
     <a className='ico' href=' '>
     <i class="fa-brands fa-tiktok ico3"></i> 
-      <div className="tooltip">LinkedIn</div>
+      <div className="tooltip">TikTok</div>
     </a>
   
   </div>
